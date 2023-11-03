@@ -25,11 +25,9 @@ public class UniqueEmail {
                     flag = true;
                     i++;
                 }
-            } else if (s.charAt(i) == '@') {
-                flag = true;
-                ans += s.charAt(i);
-                i++;
             } else {
+                if (s.charAt(i) == '@')
+                    flag = true;
                 ans += s.charAt(i);
                 i++;
             }
